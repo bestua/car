@@ -1,0 +1,21 @@
+body {
+  font-family: 'Courier New', monospace;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.8;
+}

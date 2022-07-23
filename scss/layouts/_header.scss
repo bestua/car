@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #e9e9e9;
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
