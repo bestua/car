@@ -81,6 +81,10 @@ a:focus {
   color: #2c2c2c;
 }
 
+.hero__description {
+  text-align: center;
+}
+
 .footer {
   border-top: 1px solid #969696;
 }
