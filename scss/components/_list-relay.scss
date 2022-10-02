@@ -1,0 +1,14 @@
+.list__relay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  img {
+    outline: 1px solid green;
+  }
+}
