@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', monospace;
+  font-size: 18px;
 }
 
 img {
@@ -23,7 +24,7 @@ a:focus {
 }
 
 .container {
-  padding: 0 20px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -100,6 +101,44 @@ a:focus {
 
 .hero__description {
   text-align: center;
+}
+
+.schedule-set {
+  padding: 0;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.schedule-set__item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.schedule-set__title {
+  padding-left: 5px;
+  font-weight: bold;
+  background-color: #405f90;
+  color: #fff;
+  border-radius: 4;
+}
+
+.schedule-set__descr {
+  width: 135px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.schedule-set__value {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.schedule-set__value-comments {
+  text-align: right;
 }
 
 .footer {
