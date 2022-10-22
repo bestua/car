@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моє авто - додаткова інформація</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" class="logo">MyCar</a>
+
+        <!--  -->
+        <!--  -->
+        <button type="button" class="menu-button" data-menu-button>
+          <svg width="40" height="40" aria-label="Mobile menu switch">
+            <use
+              class="icon-menu"
+              href="./assets/images/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="icon-close"
+              href="./assets/images/sprite.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="mob-menu-container" data-menu>
+          <div class="nav__sec">
+            <a href="./index.html">Головна</a>
+            <a class="current--tomato" href="./info.html"
+              >Додаткова інформація</a
+            >
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <h1 class="hero__title">My Car - додаткова інформація</h1>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <!--  -->
+          <ul class="schedule-set list">
+            <li
+              class="
+                schedule-set__item
+                schedule-set__title
+                schedule-set__title--general
+              "
+            >
+              <span class="schedule-set__descr">При купівлі</span>
+              <span class="schedule-set__value">07.05.2022</span>
+            </li>
+
+            <li class="schedule-set__item">
+              <span class="schedule-set__descr">Пробіг</span>
+              <span class="schedule-set__value">77 280 км.</span>
+            </li>
+            <li class="schedule-set__item">
+              <span class="schedule-set__descr">Коментарі</span>
+              <span class="schedule-set__value schedule-set__value-comments"
+                >Пробіг при купівлі</span
+              >
+            </li>
+          </ul>
+          <!--  -->
+        </div>
+
+        <!-- --------- -->
+        <!-- --------- -->
+        <!-- OLD style -->
+        <div class="container">
+          <ul>
+            <li>
+              27.07.2022 - засвітилась лампочка щодо некоректної роботи свічки
+              розжарювання (świecza żarowa), тобто мигає протягом 30 сек. після
+              заведення машини.
+            </li>
+            <li>17.09.2022 - від моменту купівлі наїжджено 7000 км.</li>
+            <li>24.09.2022 - пройдений технічний огляд (на рік).</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer START -->
+    <footer class="footer">
+      <div class="container">
+        <span class="footer__copyright"
+          >&copy; Copyright (c) reserved by MyCar
+        </span>
+      </div>
+    </footer>
+    <!-- Footer END -->
+
+    <script src="./js/burger-menu.js"></script>
+  </body>
+</html>

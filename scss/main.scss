@@ -1,11 +1,15 @@
 // base
-// base
 @import './base/common';
 @import './base/container';
 @import './base/section';
 
+// utils
+@import './utils/utils';
+
 // components
 @import './components/logo';
+@import './components/burger-menu';
+@import './components/nav-sec';
 @import './components/list-relay';
 
 // layouts

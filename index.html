@@ -14,16 +14,31 @@
   <body>
     <header class="header">
       <div class="container">
-        <span class="logo">MyCar</span>
-        <a
-          class="header__link"
-          target="_blank"
-          href="https://github.com/bestua/car"
-        >
-          <svg width="20" height="25">
-            <use href="./assets/images/sprite.svg#icon-github"></use>
+        <a href="./index.html" class="logo">MyCar</a>
+
+        <!--  -->
+        <!--  -->
+        <button type="button" class="menu-button" data-menu-button>
+          <svg width="40" height="40" aria-label="Mobile menu switch">
+            <use
+              class="icon-menu"
+              href="./assets/images/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="icon-close"
+              href="./assets/images/sprite.svg#icon-close"
+            ></use>
           </svg>
-        </a>
+        </button>
+
+        <div class="mob-menu-container" data-menu>
+          <div class="nav__sec">
+            <a class="current--tomato" href="./index.html">Головна</a>
+            <a href="./info.html">Додаткова інформація</a>
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
       </div>
     </header>
 
@@ -43,27 +58,6 @@
 
       <section>
         <div class="container">
-          <ul class="schedule-set list">
-            <li class="schedule-set__item schedule-set__title">
-              <span class="schedule-set__descr">При купівлі</span>
-              <span class="schedule-set__value">07.05.2022</span>
-            </li>
-            <li class="schedule-set__item">
-              <span class="schedule-set__descr">Документ</span>
-              <span class="schedule-set__value"></span>
-            </li>
-            <li class="schedule-set__item">
-              <span class="schedule-set__descr">Пробіг</span>
-              <span class="schedule-set__value">77 280 км.</span>
-            </li>
-            <li class="schedule-set__item">
-              <span class="schedule-set__descr">Коментарі</span>
-              <span class="schedule-set__value schedule-set__value-comments"
-                >Пробіг при купівлі</span
-              >
-            </li>
-          </ul>
-
           <!--  -->
           <ul class="schedule-set list">
             <li class="schedule-set__item schedule-set__title">
@@ -72,14 +66,7 @@
               >
               <span class="schedule-set__value">11.05.2022</span>
             </li>
-            <li class="schedule-set__item">
-              <span class="schedule-set__descr">Документ</span>
-              <span class="schedule-set__value"></span>
-            </li>
-            <li class="schedule-set__item">
-              <span class="schedule-set__descr">Пробіг</span>
-              <span class="schedule-set__value"></span>
-            </li>
+
             <li class="schedule-set__item">
               <span class="schedule-set__descr">Коментарі</span>
               <span class="schedule-set__value schedule-set__value-comments"
@@ -88,68 +75,139 @@
             </li>
           </ul>
           <!--  -->
-          <ul>
-            <li>
-              30.06.2022 - заміна реле-перемикача (przekażnik) вітряка
-              кондиціонера
-              <span>Старий:</span>
-              <ul class="list__relay list">
-                <li>
-                  <img
-                    src="./assets/images/przekaznik-stary-1.jpg"
-                    alt=""
-                    width="150"
-                    height="150"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="./assets/images/przekaznik-stary-2.jpg"
-                    alt=""
-                    width="150"
-                    height="150"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="./assets/images/przekaznik-stary-3.jpg"
-                    alt=""
-                    width="150"
-                    height="150"
-                  />
-                </li>
-              </ul>
+
+          <!--  -->
+          <ul class="schedule-set list">
+            <li class="schedule-set__item schedule-set__title">
+              <span class="schedule-set__descr">Заміна реле-перемикача</span>
+              <span class="schedule-set__value">30.06.2022</span>
             </li>
-            <li>
-              22.07.2022 - заміна
-              <a
-                target="_blank"
-                href="./assets/images/2022-07-22_oil-changing.jpg"
-                >масла</a
+            <li class="schedule-set__item">
+              <span class="schedule-set__descr">Коментарі</span>
+              <span class="schedule-set__value schedule-set__value-comments"
+                >Заміна реле-перемикача (przekażnik) вітряка кондиціонера</span
               >
-              двигуна, масляного фільтра та фільтра палива, при пробізі 80 250
-              км. (заміна по 9000 км.).
             </li>
             <li>
-              27.07.2022 - засвітилась лампочка щодо некоректної роботи свічки
-              розжарювання (świecza żarowa), тобто мигає протягом 30 сек. після
-              заведення машини.
-            </li>
-            <li>17.09.2022 - від моменту купівлі наїжджено 7000 км.</li>
-            <li>24.09.2022 - пройдений технічний огляд (на рік).</li>
-            <li>
-              17.10.2022 - встановлення нової лампочки лівої фари спереду,
-              ближнього світла (тип латиницею H7 - отримав рекомендацію тримати
-              таку лампочку на запас в бардачку)
-            </li>
-            <li>
-              20.10.2022 - заміна всіх свічок розжарювання, перша була робоча,
-              вона допомагала заводитись, три інших спалені.
-              <a target="_blank" href="./assets/images/siweca-zarowa_change.jpg"
-                >Документ типу деталей та вартості заміни.</a
-              >
+              <div>Старий:</div>
+              <!--  -->
+              <!--  -->
+              <!--  -->
+              <!-- SLIDER MARKUP -->
+              <div class="no-js">
+                <button class="prev">Prev</button
+                ><button class="next">Next</button>
+
+                <div class="slider__list-wrap">
+                  <ul class="slider__list">
+                    <li class="slider__item">
+                      <img
+                        src="./assets/images/przekaznik-stary-1.jpg"
+                        width="200"
+                        alt="Pic1"
+                      />
+                    </li>
+                    <li class="slider__item">
+                      <img
+                        src="./assets/images/przekaznik-stary-2.jpg"
+                        width="200"
+                        alt="Pic2"
+                      />
+                    </li>
+                    <li class="slider__item">
+                      <img
+                        src="./assets/images/przekaznik-stary-3.jpg"
+                        width="200"
+                        alt="Pic3"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- SLIDER MARKUP END -->
+              <!--  -->
+              <!--  -->
+              <!--  -->
             </li>
           </ul>
+          <!--  -->
+
+          <!--  -->
+          <ul class="schedule-set list">
+            <li class="schedule-set__item schedule-set__title">
+              <span class="schedule-set__descr">Заміна масла двигуна</span>
+              <span class="schedule-set__value">22.07.2022</span>
+            </li>
+
+            <li class="schedule-set__item">
+              <span class="schedule-set__descr">Пробіг</span>
+              <span class="schedule-set__value">80 250 км.</span>
+            </li>
+            <li class="schedule-set__item">
+              <span class="schedule-set__descr">Коментарі</span>
+              <span class="schedule-set__value schedule-set__value-comments">
+                заміна
+                <a
+                  target="_blank"
+                  href="./assets/images/2022-07-22_oil-changing.jpg"
+                  >масла</a
+                >
+                двигуна, масляного фільтра та фільтра палива, при пробізі 80 250
+                км. (заміна по 9000 км.).
+              </span>
+            </li>
+          </ul>
+          <!--  -->
+
+          <!--  -->
+          <ul class="schedule-set list">
+            <li class="schedule-set__item schedule-set__title">
+              <span class="schedule-set__descr"
+                >Нова лампочка лівої фари спереду</span
+              >
+              <span class="schedule-set__value">17.10.2022</span>
+            </li>
+
+            <li class="schedule-set__item">
+              <span class="schedule-set__descr">Коментарі</span>
+              <span class="schedule-set__value schedule-set__value-comments">
+                Встановлення нової лампочки лівої фари спереду, ближнього світла
+                (тип латиницею H7 - отримав рекомендацію тримати таку лампочку
+                на запас в бардачку)
+              </span>
+            </li>
+          </ul>
+          <!--  -->
+
+          <!--  -->
+          <ul class="schedule-set list">
+            <li class="schedule-set__item schedule-set__title">
+              <span class="schedule-set__descr"
+                >Заміна свічок розжарювання</span
+              >
+              <span class="schedule-set__value">20.10.2022</span>
+            </li>
+
+            <li class="schedule-set__item">
+              <span class="schedule-set__descr">Документ</span>
+              <span class="schedule-set__value schedule-set__value-comments">
+                <a
+                  target="_blank"
+                  href="./assets/images/siweca-zarowa_change.jpg"
+                  >Документ типу деталей та вартості заміни.</a
+                ></span
+              >
+            </li>
+
+            <li class="schedule-set__item">
+              <span class="schedule-set__descr">Коментарі</span>
+              <span class="schedule-set__value schedule-set__value-comments">
+                заміна всіх свічок розжарювання, перша була робоча, вона
+                допомагала заводитись, три інших спалені.
+              </span>
+            </li>
+          </ul>
+          <!--  -->
         </div>
       </section>
     </main>
@@ -160,8 +218,20 @@
         <span class="footer__copyright"
           >&copy; Copyright (c) reserved by MyCar
         </span>
+
+        <a
+          class="header__link"
+          target="_blank"
+          href="https://github.com/bestua/car"
+        >
+          <svg width="20" height="25">
+            <use href="./assets/images/sprite.svg#icon-github"></use>
+          </svg>
+        </a>
       </div>
     </footer>
     <!-- Footer END -->
+
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>

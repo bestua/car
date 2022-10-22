@@ -1,5 +1,11 @@
 .footer {
   border-top: 1px solid #969696;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .footer__copyright {
