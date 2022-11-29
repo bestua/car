@@ -1,3 +1,14 @@
+.hero__tire-container {
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid #b1b1b1;
+}
+
+.hero__tire-pic {
+  margin-bottom: 10px;
+  display: block;
+}
+
 .hero__title {
   text-align: center;
 
